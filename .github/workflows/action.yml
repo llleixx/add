@@ -1,0 +1,11 @@
+name: actions
+on:
+ push
+jobs:
+ add-check:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v2
+   - name: Run a shell
+     shell: bash
+     run: sh t.sh
