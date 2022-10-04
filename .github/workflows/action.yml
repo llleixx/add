@@ -1,6 +1,8 @@
 name: actions
 on:
- push
+ push:
+  branches:
+   - dev
 jobs:
  add-check:
   runs-on: ubuntu-latest
