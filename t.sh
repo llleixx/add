@@ -1,10 +1,10 @@
 #!/bin/bash
 
-gcc /home/lllei/Desktop/code/c/code/jia.c -o /home/lllei/Desktop/code/c/exe/jia
+gcc ./jia.c -o ./jia
 
 a=$RANDOM b=$RANDOM
 
-c=$(/home/lllei/Desktop/code/c/exe/jia $a $b)
+c=$(./jia $a $b)
 
 if((c == a + b))
 then
