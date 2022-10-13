@@ -11,7 +11,7 @@ jobs:
    - name: Run a shell
      run: ./t.sh
    - name: push
-     uses: JamesIves/github-pages-deploy-action@dev
+     uses: JamesIves/github-pages-deploy-action@v4
      with:
       folder: .
       branch: master
